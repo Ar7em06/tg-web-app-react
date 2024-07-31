@@ -24,7 +24,7 @@ const ProductList = () => {
     const [addedItems, setAddedItems] = useState([]);
     const {tg} = useTelegram();
 
-    const onAdd = (products) => {
+    const onAdd = (product) => {
         const alreadyAdded = addedItems.find(item => item.id === product.id);
         let newItems = [];
 
