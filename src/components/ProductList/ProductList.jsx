@@ -30,7 +30,7 @@ const ProductList = () => {
             totalPrice: getTotalPrice(addedItems),
             queryId,
         }
-        fetch('https://willowy-valkyrie-286c9a.netlify.app/', {
+        fetch('https://willowy-valkyrie-286c9a.netlify.app/web-data', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
